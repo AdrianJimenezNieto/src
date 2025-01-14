@@ -11,8 +11,11 @@ public class Contable extends Empleado {
   public Contable() {}
 
   // Constructor con atributos
-  public Contable(String nombre, int edad, float salario, String especialidad, String certificaciones, float balanceGestionado) {
-    super(nombre, edad, salario); // Llamada al constructor padre
+  public Contable(String nombre, int edad, float salario, String direccion,
+  String telefono, String email, String fechaInicio, String especialidad,
+  String certificaciones, float balanceGestionado) {
+    // Llamada al constructor del padre
+    super(nombre, edad, salario, direccion, telefono, email, fechaInicio); 
     this.especialidad = especialidad;
     this.certificaciones = certificaciones;
     this.balanceGesionado = balanceGestionado;

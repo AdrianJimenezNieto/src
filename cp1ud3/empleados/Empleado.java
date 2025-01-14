@@ -10,15 +10,20 @@ public class Empleado {
   private String email;
   private String fechaInicio; // Formato: DD/MM/YYYY
 
-  // Constructor sin parametros
+  // Constructor sin atributos
   public Empleado() {}
   
-  // Constructor con parametros
-  public Empleado(String nombre, int edad, float salario) {
+  // Constructor con atributos
+  public Empleado(String nombre, int edad, float salario, String direccion,
+  String telefono, String email, String fechaInicio) {
     // Con this.atrbuto hacemos referencia al atributo de la instancia de clase que estemos manejando
     this.nombre = nombre;
     this.edad = edad;
     this.salario = salario;
+    this.direccion = direccion;
+    this.telefono = telefono;
+    this.email = email;
+    this.fechaInicio = fechaInicio;
   }
 
   // Sobreescribo el método toString() de la clase

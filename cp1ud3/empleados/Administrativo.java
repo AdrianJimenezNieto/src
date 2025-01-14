@@ -11,8 +11,11 @@ public class Administrativo extends Empleado {
   public Administrativo() {}
 
   // Constructor con atributos
-  public Administrativo(String nombre, int edad, float salario, String areaResponsable, boolean teletrabajo, boolean horarioFlexible) {
-    super(nombre, edad, salario); // Llamada al constructor del padre
+  public Administrativo(String nombre, int edad, float salario, String direccion,
+  String telefono, String email, String fechaInicio, String areaResponsable,
+  boolean teletrabajo, boolean horarioFlexible) {
+    // Llamada al constructor del padre
+    super(nombre, edad, salario, direccion, telefono, email, fechaInicio); 
     this.areaResponsable = areaResponsable;
     this.teletrabajo = teletrabajo;
     this.horarioFlexible = horarioFlexible;
