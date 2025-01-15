@@ -4,7 +4,7 @@ package cp1ud3.empleados;
 public class Informatico extends Empleado {
   // Declaración de atributos privados
   private String lenguajeDominante;
-  private String tecnologías; // Para las tecnologías que domina
+  private String tecnologias; // Para las tecnologias que domina
   // Este atributo tecnologias podria ser una lista de strings, pero lo voy a dejar asi para simplificar
   private String nivelExperiencia; // Para clarificar (ej.: junior, senior,...)
 
@@ -17,8 +17,25 @@ public class Informatico extends Empleado {
   String tecnologias, String nivelExperiencia) {
     super(nombre, edad, salario, direccion, telefono, email, fechaInicio); // Llamada al constructor del padre
     this.lenguajeDominante = lenguajeDominante;
-    this.tecnologías = tecnologias;
+    this.tecnologias = tecnologias;
     this.nivelExperiencia = nivelExperiencia;
+  }
+
+  // Sobreescribimos el metodo toString() de la clase
+  @Override
+  public String toString() {
+      return "Informatico{" +
+            "nombre='" + getNombre() + '\'' +
+            ", edad=" + getEdad() +
+            ", salario=" + getSalario() +
+            ", direccion='" + getDireccion() + '\'' +
+            ", telefono='" + getTelefono() + '\'' +
+            ", email='" + getEmail() + '\'' +
+            ", fechaInicio='" + getFechaInicio() + '\'' +
+            ", lenguajeDominante='" + lenguajeDominante + '\'' +
+            ", tecnologias='" + tecnologias + '\'' +
+            ", nivelExperiencia='" + nivelExperiencia + '\'' +
+            '}';
   }
 
   // Getters y Setters
@@ -30,10 +47,10 @@ public class Informatico extends Empleado {
   }
 
   public String getTecnologias() {
-    return tecnologías;
+    return tecnologias;
   }
   public void setTecnologias(String newTecnologias) {
-    this.tecnologías = newTecnologias;
+    this.tecnologias = newTecnologias;
   }
 
   public String getNivelExperiencia() {

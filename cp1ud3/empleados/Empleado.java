@@ -30,10 +30,14 @@ public class Empleado {
   @Override
   public String toString() {
     return "Empleado{" +
-            "nombre= " + nombre + "'" +
-            ", edad= " + edad +
-            ", salario= " + salario + 
-            "}";
+          "nombre='" + nombre + '\'' +
+          ", edad=" + edad +
+          ", salario=" + salario +
+          ", direccion='" + direccion + '\'' +
+          ", telefono='" + telefono + '\'' +
+          ", email='" + email + '\'' +
+          ", fechaInicio='" + fechaInicio + '\'' +
+          '}';
   }
 
   // Getters y Setters
@@ -59,7 +63,7 @@ public class Empleado {
     this.salario = newSalario;
   }
 
-  public String direccion() {
+  public String getDireccion() {
     return direccion;
   }
   public void setDireccion(String newDireccion) {

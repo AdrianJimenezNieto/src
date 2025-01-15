@@ -21,6 +21,22 @@ public class Administrativo extends Empleado {
     this.horarioFlexible = horarioFlexible;
   }
 
+  // Sobreescribo el metodo toString() para facilitar las cosas
+  @Override
+public String toString() {
+    return "Administrativo{" +
+          "nombre='" + getNombre() + '\'' +
+          ", edad=" + getEdad() +
+          ", salario=" + getSalario() +
+          ", direccion='" + getDireccion() + '\'' +
+          ", telefono='" + getTelefono() + '\'' +
+          ", email='" + getEmail() + '\'' +
+          ", fechaInicio='" + getFechaInicio() + '\'' +
+          ", areaResponsable='" + areaResponsable + '\'' +
+          ", teletrabajo=" + teletrabajo +
+          ", horarioFlexible=" + horarioFlexible +
+          '}';
+}
   // Getters y Setters
   public String getAreaResponsable() {
     return areaResponsable;
